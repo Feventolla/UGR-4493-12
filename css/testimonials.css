@@ -1,0 +1,245 @@
+body {
+  background-color: #FFFFFF;
+  font-family: "poppins", sans-serif;
+}
+.header-main {
+  background-image: url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+
+}
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 1em;
+  margin-top: -.5em;
+
+}
+.nav {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 2px;
+  
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: 28em;
+  justify-content: space-between;
+  flex: content;
+  margin-top: 2em;
+
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+.header-name {
+  margin-left: 5px;
+  margin-top: 5px;
+  font-family:'Courier New', Courier, monospace;
+
+}
+.logo {
+  border-radius: 15px;
+}
+h1 {
+  text-align: center;
+  margin-top: 3em;
+  font-family: "Red Hat Display", sans-serif;
+
+}
+.front-img {
+  margin-left: 5em;
+}
+.main-part {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 2em 10em;
+  
+
+}
+.part-of {
+  transition: all .2s ease-in-out;
+  box-shadow: 1px 1px 5px 5px rgb(250, 244, 244) ;
+  margin: 3em;
+  padding: 2em;
+  background-color: white;
+
+}
+.part-img {
+  margin-left: 6em;
+  margin-bottom: 1em;
+
+}
+article {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10em;
+  background-color: #eaf0ff;
+  margin-bottom: -1em;
+}
+.social-media {
+  margin-left: 31.5em;
+  
+
+}
+.copy-right {
+  color: rgb(71, 68, 68);
+  margin-left: 34em;
+}
+.media {
+  padding: 1em;
+}
+.nav:hover {
+  box-shadow: 2px 2px rgb(176, 156, 224);
+  margin-left: -5px;
+  color: rgba(2, 13, 71, 0.651);
+}
+.nav-list .active {
+  color: rgb(146, 5, 5);
+  text-decoration: none;
+  text-transform: uppercase ;
+}
+/* nav a:visited{
+  color: rgb(225, 181, 245);
+} */
+.part-of:hover {
+  box-shadow: 5px 5px 10px 10px rgb(235, 235, 235);
+  transform: scale(1.1);
+}
+
+#check {
+  display: none;
+}
+label h1 {
+  display: none;
+}
+.check-button {
+  margin-left: 18em;
+  margin-top:2em;
+  float: right; 
+  font-size: 25px; 
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width:990px) {
+  body {
+    font-size: 15px;
+  }
+  .nav-list {
+    flex-wrap: wrap;
+    margin-left: 10em;
+    margin-top: 1.5em;
+  
+  }
+  .header {
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  
+  .header-name {
+    margin-left: 2px;
+    margin-top: 5px;
+  
+  }
+  .logo {
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+  }
+  .main-part {
+    grid-template-columns: 60% 60%;
+    margin: 1em 8em;
+  }
+  .part-img {
+    margin-left: 2em;
+    width: 80px;
+    height: 80px;
+  }
+  .social-media, .copy-right{
+    margin-left: 19em;
+  }
+}
+@media screen and (max-width:767px) {
+  nav {
+    width: 100%;
+  }
+  .nav-list {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    margin-left: .5em;
+    margin-top: 1.5em;
+    width: 100vw;
+    padding: 0;
+    background-color: rgba(204, 185, 250, 0.267);
+    transition: all .5s;
+  }
+  nav ul li {
+    border-radius: 0px;
+    padding: .5em;
+    margin: 2.5em 2em;
+  }
+  .nav {
+    color: black;
+  }
+  .check-button {
+    display: block;
+  }
+  #check:checked ~ .nav-list {
+    height: 100vh;
+  }
+  .part-of {
+    padding: .5em;
+    margin: 1.5em;
+  }
+  .main-part {
+    grid-template-columns: 50% 50%;
+    margin: 1em 4em;
+  }
+  .social-media, .copy-right{
+    margin-left: 1em;
+  }
+}
+@media screen and (max-width:500px) {
+  body {
+    font-size: small;
+  }
+  .header-name {
+    margin-left: 2px;
+    margin-top: 5px;
+  
+  }
+  .check-button {
+    margin-top: .5em;
+    margin-left: 12em;
+  }
+  .logo {
+    display: none;
+  }
+  .front-img {
+    display: none;
+  }
+  .part-of {
+    padding: 1.5em;
+    margin: 2em;
+  }
+  .main-part {
+    grid-template-columns: 90%;
+    margin: 2em 4em;
+  }
+}
